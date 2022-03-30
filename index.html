@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link href="/src/styles.css" rel="stylesgeet" />
+    <title>Weather App 🌞</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <header class="headline">
+      <div class="main">
+        <p>
+          Right now, <strong><span id="date"></span></strong> in
+          <strong><span id="city">Jakarta</span></strong
+          >, people brace the <span id="weather">clouds</span>.
+        </p>
+
+        <div class="container result">
+          <div class="item icon">☁️</div>
+          <div class="item temperature"><span id="temperature">27</span>°C</div>
+          <div class="item additional-result">
+            <p>
+              🍃 <strong><span id="wind">8</span>km/hr</strong> Wind<br />
+              ☁️ <strong><span id="clouds">40</span>%</strong> Cloudiness<br />
+              💧 <strong><span id="humidity">83</span>%</strong> Humidity
+            </p>
+          </div>
+        </div>
+
+        <div class="container forecast">
+          <div class="forecast-result">
+            <p>⛅<br /><strong>29°C</strong><br />Sun</p>
+          </div>
+          <div class="forecast-result">
+            <p>⛅<br /><strong>29°C</strong><br />Mon</p>
+          </div>
+          <div class="forecast-result">
+            <p>⛅<br /><strong>29°C</strong><br />Tue</p>
+          </div>
+          <div class="forecast-result">
+            <p>⛅<br /><strong>29°C</strong><br />Wed</p>
+          </div>
+          <div class="forecast-result">
+            <p>⛅<br /><strong>29°C</strong><br />Thu</p>
+          </div>
+        </div>
+
+        <div class="search-container">
+          <form
+            class="form-inline justify-content-center d-flex flex-nowrap"
+            id="search-form"
+          >
+            <label class="sr-only" for="search-input">City</label>
+            <input
+              type="text"
+              class="form-control form-control-lg"
+              id="search-input"
+              placeholder="Enter a city"
+            />
+            <button
+              type="submit"
+              class="btn btn-outline-info btn-lg"
+              id="search-button"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+
+        <div class="row">
+          <ul class="list-inline">
+            <li class="list-inline-item"><strong>Popular City 👉🏽</strong></li>
+            <li class="list-inline-item">
+              <a href="#" id="new-york">New York</a>
+            </li>
+            <li class="list-inline-item"><a href="#" id="london">London</a></li>
+            <li class="list-inline-item"><a href="#" id="paris">Paris</a></li>
+            <li class="list-inline-item">
+              <a href="#" id="beijing">Beijing</a>
+            </li>
+            <li class="list-inline-item"><a href="#" id="seoul">Seoul</a></li>
+            <li class="list-inline-item"><a href="#" id="tokyo">Tokyo</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <div class="footer">
+      <footer class="coder">
+        <h6>Weather App 🌞</h6>
+
+        👩🏽‍💻 Coded by <a href="#">Leonie N W</a>
+        <br />
+        🖼️ Illustration by
+        <a href="https://www.behance.net/myuuki" target="blank">Jing J</a>
+      </footer>
+    </div>
+  </body>
+  <script src="/src/index.js"></script>
+</html>

@@ -1,0 +1,150 @@
+.headline {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  overflow: auto;
+}
+
+.main {
+  padding: 50px 50px 60px 50px !important;
+  background-color: #ffffffe8;
+  /* border: 0.5px solid #2d2d2fcc !important; */
+  box-shadow: 2px 2px 10px -3px #4b4b4b41;
+  border-radius: 10px;
+  margin: 12px;
+}
+
+body {
+  color: #2d2d2f;
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.875rem;
+  background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/cb45f076573643.5c6dad24e7f4c.gif");
+  background-size: cover;
+  background-position: bottom 20%;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+/*
+.city {
+  text-decoration: none;
+  position: relative;
+}
+
+.city::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  bottom: -4px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 99%;
+  background: rgb(255, 49, 221);
+}
+*/
+
+.result {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.item {
+  flex: 0 0 auto;
+  margin: 20px;
+}
+
+.item.icon {
+  font-size: 2.7rem;
+}
+
+.item.temperature {
+  font-size: 2.7rem;
+  font-weight: 500;
+}
+
+.additional-result {
+  text-align: right;
+}
+
+.forecast {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  width: 95%;
+}
+
+.forecast-result {
+  flex: 0 0 auto;
+  margin: 10px;
+}
+
+.search-container {
+  padding: 20px 0 !important;
+}
+
+input {
+  border-radius: 5px 0 0 5px !important;
+  font-size: 0.875rem !important;
+  width: 80% !important;
+}
+
+button {
+  display: inline !important;
+}
+
+.btn-outline-info {
+  border-radius: 0 5px 5px 0 !important;
+  font-size: 0.875rem !important;
+  border-color: #ced4da;
+  color: #2d2d2f;
+  border-left: transparent;
+}
+
+.btn-outline-info:hover {
+  background-color: #2d2d2f;
+  color: #f4f6f8;
+  border-color: #2d2d2f;
+}
+
+.list-inline-item {
+  margin-right: 15px !important;
+  margin-left: 15px !important;
+  text-align: center !important;
+  font-size: 0.875rem !important;
+}
+
+ul {
+  margin: 0 auto !important;
+  margin-top: 20px !important;
+}
+
+footer {
+  line-height: 2em;
+}
+
+h6 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.footer {
+  background: #ffffffe8;
+}
+
+.coder {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.875rem;
+  color: #2d2d2f;
+}
