@@ -18,7 +18,7 @@ function formatDate(date) {
     "Wednesday",
     "Thursday",
     "Friday",
-    "Saturday"
+    "Saturday",
   ];
   let day = days[dayIndex];
 
@@ -44,6 +44,13 @@ function displayWeatherCondition(response) {
   document.querySelector("#clouds").innerHTML = response.data.clouds.all;
   document.querySelector("#weather").innerHTML =
     response.data.weather[0].description;
+
+  document
+    .querySelector("#icon")
+    .setAttribute(
+      "src",
+      `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    );
 }
 
 //
