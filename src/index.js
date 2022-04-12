@@ -31,6 +31,30 @@ dateElement.innerHTML = formatDate(currentTime);
 
 //
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#weather-forecast");
+
+  let forecastHTML = "";
+
+  let days = ["Wed", "Thu", "Fri", "Sat", "Sun"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+  <div class="forecast-result">
+    <p>
+      <img src="#" id="forecast-icon" /><br /><strong>29°C</strong
+      ><br />${day}
+    </p>
+  </div>
+  `;
+  });
+
+  forecastElement.innerHTML = forecastHTML;
+}
+
+//
+
 function displayWeatherCondition(response) {
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
@@ -121,3 +145,5 @@ seoul.addEventListener("click", searchSeoul);
 
 let tokyo = document.querySelector("#tokyo");
 tokyo.addEventListener("click", searchTokyo);
+
+displayForecast();

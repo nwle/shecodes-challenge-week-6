@@ -19,7 +19,7 @@ body {
   color: #2d2d2f;
   font-family: "Roboto Mono", monospace;
   font-size: 0.875rem;
-  background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/cb45f076573643.5c6dad24e7f4c.gif");
+  background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/fs/cb45f076573643.5c6dad24e7f4c.gif);
   background-size: cover;
   background-position: bottom 20%;
 }
@@ -27,25 +27,6 @@ body {
 p {
   line-height: 1.5rem;
 }
-
-/*
-.city {
-  text-decoration: none;
-  position: relative;
-}
-
-.city::after {
-  position: absolute;
-  content: "";
-  height: 2px;
-  bottom: -4px;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  width: 99%;
-  background: rgb(255, 49, 221);
-}
-*/
 
 .result {
   display: flex;
